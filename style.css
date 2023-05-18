@@ -70,7 +70,7 @@ a {
     background-size: contain;
     height: 200px;
     border-radius: 10px;
-    margin: 16px;
+    margin: 32px;
     text-overflow: clip;
 }
 
@@ -91,12 +91,12 @@ a {
 }
 
 .section div h3 {
-    font-size: 2em;
+    font-size: 2.4em;
 }
 
 .section div p {
     color: #d4d4d4;
-    font-size: 16px;
+    font-size: 1.2em;
     max-height: 100px;
     overflow-y: hidden;
     hyphens: auto;
@@ -178,13 +178,42 @@ a {
 }
 
 .footer {
+    font-size: 14px;
     background-color: #474747;
     margin-bottom: 0;
     text-align: center;
     padding: 4px;
     position: fixed;
     bottom: 0;
-    width: calc(100% - 40px);
-    margin-left: 16px;
+    width: calc(100% - 72px);
+    margin-left: 32px;
     border-radius: 10px 10px 0 0;
 }
+
+/*.menu-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: linear-gradient(270deg, rgba(34, 226, 194, 0.5), rgba(44, 179, 241, 0.5));
+    background-size: 400% 400%;
+
+    -webkit-animation: GradientBackground 30s ease infinite;
+    -moz-animation: GradientBackground 30s ease infinite;
+    animation: GradientBackground 30s ease infinite;
+}
+
+@-webkit-keyframes GradientBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes GradientBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes GradientBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}*/
