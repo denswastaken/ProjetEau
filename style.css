@@ -49,9 +49,17 @@ p {
 }
 
 a {
-    color: #ffe602;
-    text-decoration: underlines;
-    font-size: 1.2em;
+    color: white;
+    text-decoration: underline;
+    font-size: 1em;
+}
+
+.quote {
+    text-align: center;
+    font-style: italic;
+    color: #d4d4d4;
+    margin: 0;
+    padding: 0;
 }
 
 .section {
@@ -87,7 +95,7 @@ a {
 }
 
 .section div p {
-    color: #b8b8b8;
+    color: #d4d4d4;
     font-size: 16px;
     max-height: 100px;
     overflow-y: hidden;
@@ -99,13 +107,21 @@ a {
     background: linear-gradient(to right, rgba(23, 124, 164, 1), rgba(23, 124, 164, 0.2));
 }
 
-.img {
-    border-radius: 4px;
-    margin: 8px;
+#bibliographie {
+    background-color: #474747;
+    background: linear-gradient(to right, rgba(215, 145, 74, 1), rgba(215, 145, 74, 0.2));
 }
 
-.p100 {
+.img {
+    border-radius: 4px;
+}
+
+.p300 {
     width: 300px;
+}
+
+.p450 {
+    width: 450px;
 }
 
 .full {
@@ -114,10 +130,12 @@ a {
 
 .right {
     float:right;
+    margin-left: 8px;
 }
 
 .left {
     float:left;
+    margin-right: 8px;
 }
 
 .section-wrapper {
@@ -148,13 +166,25 @@ a {
     }
 }
 
+.go-back {
+    background-color: #474747;
+    margin-top: 0;
+    text-align: center;
+    padding: 4px;
+    position: fixed;
+    top: 0;
+    width: inherit;
+    border-radius: 0 0 10px 10px;
+}
 
-#footer {
+.footer {
     background-color: #474747;
     margin-bottom: 0;
     text-align: center;
     padding: 4px;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: calc(100% - 40px);
+    margin-left: 16px;
+    border-radius: 10px 10px 0 0;
 }
