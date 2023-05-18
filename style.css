@@ -1,0 +1,160 @@
+body {
+    background-color: #2e2e2e;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1.25rem;
+    color:#bbbbbb;
+    margin-top: 0;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+a {
+    color: #ffe602;
+    text-decoration: underlines;
+    font-size: 1.2em;
+}
+
+.section {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    border-radius: 10px;
+    margin: 16px;
+    text-overflow: clip;
+}
+
+.section:hover {
+    border: 2px solid #ffe602;
+    box-shadow: yellow 0px 0px 10px;
+    transition: 0.2s;
+}
+
+.section div {
+    text-align: left;
+    padding: 8px 16px 0 16px;
+}
+
+.section img {
+    border-radius: 10px 0 0 10px;
+    width: 300px;
+}
+
+.section div h3 {
+    font-size: 2em;
+}
+
+.section div p {
+    color: #b8b8b8;
+    font-size: 16px;
+    max-height: 100px;
+    overflow-y: hidden;
+    hyphens: auto;
+}
+
+#introduction {
+    background-color: #474747;
+    background: linear-gradient(to right, rgba(23, 124, 164, 1), rgba(23, 124, 164, 0.2));
+}
+
+.img {
+    border-radius: 4px;
+    margin: 8px;
+}
+
+.p100 {
+    width: 300px;
+}
+
+.full {
+    width: 100%;
+}
+
+.right {
+    float:right;
+}
+
+.left {
+    float:left;
+}
+
+.section-wrapper {
+    width: 60%;
+    margin-left: 20%;
+    align-self: center;
+    text-align: left;
+}
+
+@media only screen and (min-width: 1400px) {
+    .section-wrapper {
+        width: 60%;
+        margin-left: 20%;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .section-wrapper {
+        width: 40%;
+        margin-left: 30%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .section-wrapper {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+
+#footer {
+    background-color: #474747;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 4px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
