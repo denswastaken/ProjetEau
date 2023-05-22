@@ -29,14 +29,14 @@ h2 {
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1;
-    margin-top: 0;
+    margin-top: 2em;
 }
 
 h3 {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1;
-    margin-top: 0.5rem;
+    margin-top: 1.4em;
     margin-bottom: 0.5rem;
 }
 
@@ -59,7 +59,7 @@ p {
 a {
     color: white;
     text-decoration: underline;
-    font-size: 1em;
+    font-size: 1.5rem;
 }
 
 ol {
@@ -68,7 +68,7 @@ ol {
     padding-left: 0;
 }
 
-li::before {
+ol li::before {
     margin-left: 1em;
     text-indent: -1em;
     font-weight: bold;
@@ -77,15 +77,18 @@ li::before {
     content: "[" counter(my-counter) "] ";
 }
 
-li a {
+ol li a {
     text-decoration: none;
+}
+
+ul li {
+    margin-left: 200px;
 }
 
 .disabled-link {
     cursor: not-allowed;
     opacity: 0.5;
     display: inline-block;
-    /* For IE11/ MS Edge bug */
     pointer-events: none;
     text-decoration: none;
 }
@@ -128,6 +131,7 @@ li a {
 }
 
 .section div h3 {
+    margin-top: 0.2em;
     font-size: 2.4em;
     font-weight: bold;
 }
@@ -151,16 +155,32 @@ li a {
     background: linear-gradient(to right, rgba(173, 207, 49, 1), rgba(173, 207, 49, 0.2));
 }
 
+#pollution {
+    background: linear-gradient(to right, rgba(158, 109, 61, 1), rgba(158, 109, 61, 0.2));
+}
+
 #bibliographie {
-    background: linear-gradient(to right, rgba(215, 145, 74, 1), rgba(215, 145, 74, 0.2));
+    background: linear-gradient(to right, rgba(253, 202, 0, 1), rgba(253, 202, 0, 0.2));
 }
 
 .img {
     border-radius: 10px;
 }
 
+.p100 {
+    width: 100px;
+}
+
+.p150 {
+    width: 150px;
+}
+
 .p200 {
     width: 200px;
+}
+
+.p250 {
+    width: 250px;
 }
 
 .p300 {
@@ -222,7 +242,7 @@ li a {
     top: 0;
     width: inherit;
     border-radius: 0 0 10px 10px;
-    font-size: 1.4em;
+    font-size: 1.4rem;
 }
 
 .content {
@@ -233,7 +253,7 @@ li a {
 
 .content h1 {
     color: #fff;
-    font-size: 6em;
+    font-size: 6rem;
     text-align: center;
     position: absolute;
     width: 100%;
@@ -303,31 +323,3 @@ li a {
     margin-left: 32px;
     border-radius: 10px 10px 0 0;
 }
-
-/*.menu-wrapper {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background: linear-gradient(270deg, rgba(34, 226, 194, 0.5), rgba(44, 179, 241, 0.5));
-    background-size: 400% 400%;
-
-    -webkit-animation: GradientBackground 30s ease infinite;
-    -moz-animation: GradientBackground 30s ease infinite;
-    animation: GradientBackground 30s ease infinite;
-}
-
-@-webkit-keyframes GradientBackground {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes GradientBackground {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes GradientBackground {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}*/
