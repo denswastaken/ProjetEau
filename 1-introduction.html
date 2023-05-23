@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <title>1. Introduction</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8c71c4d8b8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="section-wrapper">
         <br>
-        <a class="go-back" href="/">↩️ Retourner au menu principal</a>
-
+        <a class="go-back" href="/"><i class="fa-solid fa-house"></i> Retourner au menu principal</a>
+        <br>
         <h1>1. Introduction</h1>
         <p>
             <img class="img right p300" src="img/1-introduciton/1img1.jpg">
@@ -58,9 +59,23 @@
 
         <p style="font-size: 1em;"><i>* L’eau dont on parle dans le corps humain, n’est pas complètement l’eau pure (H2O), comme elle contient tant des minéraux et d’autres substances.</i></p>
 
-        <br><br>
-        <h3><a href="2-sources">➡️ Partie suivante : 2. Les sources d'eau</a></h3>
-        <br><br>
+        <div class="page-nav">
+            <button class="prev disabled-link" onclick="window.location.href = '';">
+                <i class="fa-solid fa-circle-chevron-left"></i>
+                <div>
+                    <h3>Page précédente</h3>
+                    <h2></h2>
+                </div>
+            </button>
+            <button class="next" onclick="window.location.href = '2-sources';">
+                <div>
+                    <h3>Page suivante</h3>
+                    <h2>2. Les sources d'eau</h2>
+                </div>
+                <i class="fa-solid fa-circle-chevron-right"></i>
+            </button>
+        </div>
+        <br>
     </div>
 </body>
 
